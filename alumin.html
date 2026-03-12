@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<title>Alumini (Al)</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(120deg,#0d0d1f,#1a1a3a,#162447);
+  color:white;
+}
+header{text-align:center;padding:40px}
+header h1{font-size:48px;margin-bottom:10px}
+header p{font-size:18px;opacity:0.9}
+.container{display:flex;justify-content:space-around;align-items:center;padding:40px;flex-wrap:wrap}
+.info{width:420px;background:rgba(255,255,255,0.15);padding:25px;border-radius:18px}
+.info h2{text-align:center;margin-top:0}
+.info p{font-size:16px;line-height:1.6}
+.atom{width:280px;height:280px;position:relative}
+
+/* Bërthama */
+.nucleus{width:48px;height:48px;background:#ff6f61;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+
+/* Shtresa e parë (2 elektrone) */
+.shell1{width:160px;height:160px;border:2px dashed #00ffff;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin1 6s linear infinite}
+.shell1 div{
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron1{ transform: translate(-50%, -50%) rotate(0deg)   translateX(80px); }
+.electron2{ transform: translate(-50%, -50%) rotate(180deg)  translateX(80px); }
+
+/* Shtresa e dytë (8 elektrone) */
+.shell2{width:220px;height:220px;border:2px dashed #ffdd00;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin2 10s linear infinite}
+.shell2 div{
+  position:absolute;
+  width:12px;
+  height:12px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron3{ transform: translate(-50%, -50%) rotate(0deg)   translateX(110px); }
+.electron4{ transform: translate(-50%, -50%) rotate(45deg)  translateX(110px); }
+.electron5{ transform: translate(-50%, -50%) rotate(90deg) translateX(110px); }
+.electron6{ transform: translate(-50%, -50%) rotate(135deg) translateX(110px); }
+.electron7{ transform: translate(-50%, -50%) rotate(180deg) translateX(110px); }
+.electron8{ transform: translate(-50%, -50%) rotate(225deg) translateX(110px); }
+.electron9{ transform: translate(-50%, -50%) rotate(270deg) translateX(110px); }
+ .electron10{ transform: translate(-50%, -50%) rotate(315deg) translateX(110px); }
+
+/* Shtresa e tretë (3 elektrone jashtme) */
+.shell3{width:280px;height:280px;border:2px dashed #ff4d4d;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin3 12s linear infinite}
+.shell3 div{
+  position:absolute;
+  width:14px;
+  height:14px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron11{ transform: translate(-50%, -50%) rotate(0deg)   translateX(140px); }
+.electron12{ transform: translate(-50%, -50%) rotate(120deg)  translateX(140px); }
+.electron13{ transform: translate(-50%, -50%) rotate(240deg) translateX(140px); }
+
+
+/* Animacionet */
+@keyframes spin1{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes spin2{from{transform:translate(-50%,-50%) rotate(360deg)}to{transform:translate(-50%,-50%) rotate(0deg)}}
+@keyframes spin3{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Alumini (Al)</h1>
+  <p>Elementi i trembëdhjetë i sistemit periodik</p>
+</header>
+<div class="container">
+  <div class="info">
+    <h2>Të dhënat kryesore</h2>
+    <p><b>Emri:</b> Alumini</p>
+    <p><b>Simboli:</b> Al</p>
+    <p><b>Numri atomik:</b> 13</p>
+    <p><b>Masa atomike:</b> 26.982 u</p>
+    <p><b>Elektronegativiteti:</b> 1.61</p>
+    <p><b>Numrat e oksidimit:</b> +3</p>
+    <p><b>Grupi:</b>IIIA</p>
+	 <p><b>Perioda:</b>3</p>
+    <p><b>Përshkrim:</b> Alumini është një metal i lehtë dhe rezistent ndaj korrozionit. Përdoret në ndërtim, industri dhe ambalazhime. Ka 3 elektrone jashtme që i japin reaktivitet të moderuar.</p>
+  </div>
+  <div class="atom">
+    <div class="nucleus"></div>
+    <div class="shell1">
+      <div class="electron1"></div>
+      <div class="electron2"></div>
+    </div>
+    <div class="shell2">
+      <div class="electron3"></div>
+      <div class="electron4"></div>
+      <div class="electron5"></div>
+      <div class="electron6"></div>
+      <div class="electron7"></div>
+      <div class="electron8"></div>
+      <div class="electron9"></div>
+      <div class="electron10"></div>
+    </div>
+    <div class="shell3">
+      <div class="electron11"></div>
+      <div class="electron12"></div>
+      <div class="electron13"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

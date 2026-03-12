@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<title>Fluori (F)</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(120deg,#011627,#023e8a,#0077b6);
+  color:white;
+}
+header{text-align:center;padding:40px}
+header h1{font-size:48px;margin-bottom:10px}
+header p{font-size:18px;opacity:0.9}
+.container{display:flex;justify-content:space-around;align-items:center;padding:40px;flex-wrap:wrap}
+.info{width:420px;background:rgba(255,255,255,0.15);padding:25px;border-radius:18px}
+.info h2{text-align:center;margin-top:0}
+.info p{font-size:16px;line-height:1.6}
+.atom{width:280px;height:280px;position:relative}
+
+/* Bërthama */
+.nucleus{width:44px;height:44px;background:#ff6f61;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+
+/* Shtresa e parë (2 elektrone) */
+.shell1{width:160px;height:160px;border:2px dashed #00ffff;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin1 6s linear infinite}
+.shell1 div{
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron1{ transform: translate(-50%, -50%) rotate(0deg)   translateX(80px); }
+.electron2{ transform: translate(-50%, -50%) rotate(180deg)  translateX(80px); }
+
+/* Shtresa e jashtme (7 elektrone) */
+.shell2{width:220px;height:220px;border:2px dashed #ffdd00;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin2 10s linear infinite}
+.shell2 div{
+  position:absolute;
+  width:12px;
+  height:12px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+  }
+ .electron3{ transform: translate(-50%, -50%) rotate(0deg)   translateX(110px); }
+.electron4{ transform: translate(-50%, -50%) rotate(51.5deg)  translateX(110px); }
+.electron5{ transform: translate(-50%, -50%) rotate(103deg) translateX(110px); }
+.electron6{ transform: translate(-50%, -50%) rotate(154.5deg) translateX(110px); }
+.electron7{ transform: translate(-50%, -50%) rotate(206deg) translateX(110px); }
+.electron8{ transform: translate(-50%, -50%) rotate(257.5deg) translateX(110px); }
+.electron9{ transform: translate(-50%, -50%) rotate(309deg) translateX(110px); }
+/* Animacionet */
+@keyframes spin1{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes spin2{from{transform:translate(-50%,-50%) rotate(360deg)}to{transform:translate(-50%,-50%) rotate(0deg)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Fluori (F)</h1>
+  <p>Elementi i nëntë i sistemit periodik</p>
+</header>
+<div class="container">
+  <div class="info">
+    <h2>Të dhënat kryesore</h2>
+    <p><b>Emri:</b> Fluor</p>
+    <p><b>Simboli:</b> F</p>
+    <p><b>Numri atomik:</b> 9</p>
+    <p><b>Masa atomike:</b> 18.998 u</p>
+    <p><b>Elektronegativiteti:</b> 3.98</p>
+    <p><b>Numrat e oksidimit:</b> -1</p>
+    <p><b>Grupi:</b>VIIA</p>
+	 <p><b>Perioda:</b>2</p>
+    <p><b>Përshkrim:</b> Fluori është një gaz tepër reaktiv dhe jo metalik. Përdoret në prodhimin e teflonit, dentifrikëve dhe disa kimikateve industriale. Është elementi më elektronegativ në tabelën periodike.</p>
+  </div>
+  <div class="atom">
+    <div class="nucleus"></div>
+    <div class="shell1">
+      <div class="electron1"></div>
+      <div class="electron2"></div>
+    </div>
+    <div class="shell2">
+      <div class="electron3"></div>
+      <div class="electron4"></div>
+      <div class="electron5"></div>
+      <div class="electron6"></div>
+      <div class="electron7"></div>
+      <div class="electron8"></div>
+      <div class="electron9"></div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
