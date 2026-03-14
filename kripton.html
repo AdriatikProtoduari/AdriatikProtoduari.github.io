@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<title>Kripton (Kr)</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(120deg,#001f33,#004080,#3399cc);
+  color:white;
+}
+header{text-align:center;padding:40px}
+header h1{font-size:48px;margin-bottom:10px}
+header p{font-size:18px;opacity:0.9}
+.container{display:flex;justify-content:space-around;align-items:center;padding:40px;flex-wrap:wrap}
+.info{width:420px;background:rgba(255,255,255,0.15);padding:25px;border-radius:18px}
+.info h2{text-align:center;margin-top:0}
+.info p{font-size:16px;line-height:1.6}
+.atom{width:360px;height:360px;position:relative;}
+
+/* Bërthama */
+.nucleus{width:60px;height:60px;background:#ffcc00;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+
+/* Orbitale rrotulluese */
+.shell{
+  position:absolute;
+  top:50%;
+  left:50%;
+  border-radius:50%;
+  border:2px dashed;
+  transform:translate(-50%,-50%);
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* Shtresa 1 (2 elektrone) */
+.shell1{width:160px;height:160px;border:2px dashed #00ff99;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin1 6s linear infinite}
+.shell1 div{
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron1{ transform: translate(-50%, -50%) rotate(0deg)   translateX(80px); }
+.electron2{ transform: translate(-50%, -50%) rotate(180deg)  translateX(80px); }
+
+/* Shtresa 2 (8 elektrone) */
+.shell2{width:220px;height:220px;border:2px dashed #ffd700;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin2 10s linear infinite}
+.shell2 div{
+  position:absolute;
+  width:12px;
+  height:12px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron3{ transform: translate(-50%, -50%) rotate(0deg)   translateX(110px); }
+.electron4{ transform: translate(-50%, -50%) rotate(45deg)  translateX(110px); }
+.electron5{ transform: translate(-50%, -50%) rotate(90deg) translateX(110px); }
+.electron6{ transform: translate(-50%, -50%) rotate(135deg) translateX(110px); }
+.electron7{ transform: translate(-50%, -50%) rotate(180deg) translateX(110px); }
+.electron8{ transform: translate(-50%, -50%) rotate(225deg) translateX(110px); }
+.electron9{ transform: translate(-50%, -50%) rotate(270deg) translateX(110px); }
+ .electron10{ transform: translate(-50%, -50%) rotate(315deg) translateX(110px); }
+
+/* Shtresa 3 (18 elektrone) */
+.shell3{width:280px;height:280px;border:2px dashed #1e90ff;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin3 12s linear infinite}
+.shell3 div{
+  position:absolute;
+  width:14px;
+  height:14px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron11{ transform: translate(-50%, -50%) rotate(0deg)   translateX(140px); }
+.electron12{ transform: translate(-50%, -50%) rotate(20deg)  translateX(140px); }
+.electron13{ transform: translate(-50%, -50%) rotate(40deg) translateX(140px); }
+.electron14{ transform: translate(-50%, -50%) rotate(60deg) translateX(140px); }
+.electron15{ transform: translate(-50%, -50%) rotate(80deg) translateX(140px); }
+.electron16{ transform: translate(-50%, -50%) rotate(100deg) translateX(140px); }
+.electron17{ transform: translate(-50%, -50%) rotate(120deg) translateX(140px); }
+ .electron18{ transform: translate(-50%, -50%) rotate(140deg) translateX(140px); }
+.electron19{ transform: translate(-50%, -50%) rotate(160deg) translateX(140px); }
+.electron20{ transform: translate(-50%, -50%) rotate(180deg) translateX(140px); }
+.electron21{ transform: translate(-50%, -50%) rotate(200deg) translateX(140px); }
+.electron22{ transform: translate(-50%, -50%) rotate(220deg) translateX(140px); }
+.electron23{ transform: translate(-50%, -50%) rotate(240deg) translateX(140px); }
+.electron24{ transform: translate(-50%, -50%) rotate(260deg) translateX(140px); }
+.electron25{ transform: translate(-50%, -50%) rotate(280deg) translateX(140px); }
+.electron26{ transform: translate(-50%, -50%) rotate(300deg) translateX(140px); }
+.electron27{ transform: translate(-50%, -50%) rotate(320deg) translateX(140px); }
+.electron28{ transform: translate(-50%, -50%) rotate(340deg) translateX(140px); }
+
+/* Shtresa 4 (8 elektrone jashtëm) */
+.shell4{width:340px;height:340px;border:2px dashed #ff69b4;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin2 10s linear infinite;}
+.shell4 div{
+  position:absolute;
+  width:16px;
+  height:16px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron29{ transform: translate(-50%, -50%) rotate(0deg)   translateX(170px); }
+  .electron30{ transform: translate(-50%, -50%) rotate(45deg)   translateX(170px); }
+.electron31{ transform: translate(-50%, -50%) rotate(90deg)   translateX(170px); }
+.electron32{ transform: translate(-50%, -50%) rotate(135deg)   translateX(170px); }
+.electron33{ transform: translate(-50%, -50%) rotate(180deg)   translateX(170px); }
+.electron34{ transform: translate(-50%, -50%) rotate(225deg)   translateX(170px); }
+.electron35{ transform: translate(-50%, -50%) rotate(270deg)   translateX(170px); }
+.electron36{ transform: translate(-50%, -50%) rotate(315deg)   translateX(170px); }
+
+/* Animacionet */
+@keyframes spin1{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes spin2{from{transform:translate(-50%,-50%) rotate(360deg)}to{transform:translate(-50%,-50%) rotate(0deg)}}
+@keyframes spin3{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes spin4{from{transform:translate(-50%,-50%) rotate(360deg)}to{transform:translate(-50%,-50%) rotate(0deg)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Kripton (Kr)</h1>
+  <p>Elementi i 36-të i sistemit periodik</p>
+   <center><button style="background-color:gray;font-size:18px;font-family:britannic;"><a href="index.html">Faqja kryesore</a></button>
+<button style="background-color:#ffcc80;font-size:18px;font-family:britannic;"><a href="metaletalkaline.html">Metalet alkaline</a></button>
+<button style="background-color:#fff59d;font-size:18px;font-family:britannic;"><a href="alkalinotokesore.html">Metalet alkalino-tokësore</a></button>
+<button style="background-color:#a5d6a7;font-size:18px;font-family:britannic;"><a href="metaletkalimtare.html">Metalet kalimtare</a></button>
+<button style="background-color:#b0bec5;font-size:18px;font-family:britannic;"><a href="metaletedobeta.html">Metalet e dobëta</a></button>
+<button style="background-color:#90caf9;font-size:18px;font-family:britannic;"><a href="jometalet.html">Jometalet</a></button>
+<button style="background-color:#ce93d8;font-size:18px;font-family:britannic;"><a href="gazeteplogeta.html">Gazet e plogëta</a></button>
+<button style="background-color:#80deea;font-size:18px;font-family:britannic;"><a href="lantanoidet.html">Lantanoidet</a></button>
+<button style="background-color:#bcaaa4;font-size:18px;font-family:britannic;"><a href="aktinidet.html">Aktinoidet</a></button>
+<button style="background-color:#ef9a9a;font-size:18px;font-family:britannic;"><a href="Halogjenet.html">Halogjenet</a></button></CENTER>
+</header>
+<div class="container">
+  <div class="info">
+    <h2>Të dhënat kryesore</h2>
+    <p><b>Emri:</b> Kripton</p>
+    <p><b>Simboli:</b> Kr</p>
+    <p><b>Numri atomik:</b> 36</p>
+    <p><b>Masa atomike:</b> 83.798 u</p>
+    <p><b>Elektronegativiteti:</b> 3.00</p>
+    <p><b>Numrat e oksidimit:</b> 0</p>
+	<p><b>Grupi:</b>VIIIA</p>
+	 <p><b>Perioda:</b>4</p>
+    <p><b>Përshkrim:</b> Kriptoni është një gaz inert dhe shumë stabil. Ka 36 elektrone të vendosura sipas shtresave: 2, 8, 18, 8.</p>
+  </div>
+  
+  <div class="atom">
+    <div class="nucleus"></div>
+    
+    <!-- Shtresa 1 (2 elektrone) -->
+     <div class="shell shell1">
+      <div class="electron1"></div>
+      <div class="electron2"></div>
+    </div>
+    
+  
+    
+    <!-- Shtresa 2 -->
+    <div class="shell shell2">
+      <div class="electron3"></div>
+      <div class="electron4"></div>
+      <div class="electron5"></div>
+      <div class="electron6"></div>
+      <div class="electron7"></div>
+      <div class="electron8"></div>
+      <div class="electron9"></div>
+      <div class="electron10"></div>
+    </div>
+    
+    <!-- Shtresa 3 -->
+    <div class="shell shell3">
+      <div class="electron11"></div>
+     <div class="electron12"></div>
+	 <div class="electron13"></div>
+	 <div class="electron14"></div>
+	 <div class="electron15"></div>
+	 <div class="electron16"></div>
+	 <div class="electron17"></div>
+	 <div class="electron18"></div>
+	 <div class="electron19"></div>
+	 <div class="electron20"></div>
+	 <div class="electron21"></div>
+	 <div class="electron22"></div>
+	 <div class="electron23"></div>
+	   <div class="electron24"></div>
+	   <div class="electron25"></div>
+	    <div class="electron26"></div>
+		<div class="electron27"></div>
+	  <div class="electron28"></div>
+	 </div>
+    
+    <!-- Shtresa 4  -->
+    <div class="shell4">
+     <div class="electron29"></div>
+	 <div class="electron30"></div>
+	  <div class="electron31"></div>
+	   <div class="electron32"></div>
+	    <div class="electron33"></div>
+		<div class="electron34"></div>
+		<div class="electron35"></div>
+		<div class="electron36"></div>
+    </div>
+     </div>
+</div>
+<p align="right">&copy E.K.E</p>
+</body>
+</html>

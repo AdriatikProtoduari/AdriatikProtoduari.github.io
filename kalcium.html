@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<title>Kalciumi (Ca)</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(120deg,#001a1a,#003333,#005566);
+  color:white;
+}
+header{text-align:center;padding:40px}
+header h1{font-size:48px;margin-bottom:10px}
+header p{font-size:18px;opacity:0.9}
+.container{display:flex;justify-content:space-around;align-items:center;padding:40px;flex-wrap:wrap}
+.info{width:420px;background:rgba(255,255,255,0.15);padding:25px;border-radius:18px}
+.info h2{text-align:center;margin-top:0}
+.info p{font-size:16px;line-height:1.6}
+.atom{width:320px;height:320px;position:relative}
+
+/* Bërthama */
+.nucleus{width:50px;height:50px;background:#ffa500;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+
+/* Shtresa 1 (2 elektrone) */
+.shell1{width:160px;height:160px;border:2px dashed #00ff99;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin1 6s linear infinite}
+.shell1 div{
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron1{ transform: translate(-50%, -50%) rotate(0deg)   translateX(80px); }
+.electron2{ transform: translate(-50%, -50%) rotate(180deg)  translateX(80px); }
+
+/* Shtresa 2 (8 elektrone) */
+.shell2{width:220px;height:220px;border:2px dashed #ffd700;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin2 10s linear infinite}
+.shell2 div{
+  position:absolute;
+  width:12px;
+  height:12px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron3{ transform: translate(-50%, -50%) rotate(0deg)   translateX(110px); }
+.electron4{ transform: translate(-50%, -50%) rotate(45deg)  translateX(110px); }
+.electron5{ transform: translate(-50%, -50%) rotate(90deg) translateX(110px); }
+.electron6{ transform: translate(-50%, -50%) rotate(135deg) translateX(110px); }
+.electron7{ transform: translate(-50%, -50%) rotate(180deg) translateX(110px); }
+.electron8{ transform: translate(-50%, -50%) rotate(225deg) translateX(110px); }
+.electron9{ transform: translate(-50%, -50%) rotate(270deg) translateX(110px); }
+ .electron10{ transform: translate(-50%, -50%) rotate(315deg) translateX(110px); }
+
+/* Shtresa 3 (8 elektrone) */
+.shell3{width:280px;height:280px;border:2px dashed #1e90ff;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin3 12s linear infinite}
+.shell3 div{
+  position:absolute;
+  width:14px;
+  height:14px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron11{ transform: translate(-50%, -50%) rotate(0deg)   translateX(140px); }
+.electron12{ transform: translate(-50%, -50%) rotate(45deg)  translateX(140px); }
+.electron13{ transform: translate(-50%, -50%) rotate(90deg) translateX(140px); }
+.electron14{ transform: translate(-50%, -50%) rotate(135deg) translateX(140px); }
+.electron15{ transform: translate(-50%, -50%) rotate(180deg) translateX(140px); }
+.electron16{ transform: translate(-50%, -50%) rotate(225deg) translateX(140px); }
+.electron17{ transform: translate(-50%, -50%) rotate(270deg) translateX(140px); }
+ .electron18{ transform: translate(-50%, -50%) rotate(315deg) translateX(140px); }
+
+/* Shtresa 4 (2 elektrone jashtëm) */
+.shell4{width:340px;height:340px;border:2px dashed #ff69b4;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin2 10s linear infinite;}
+.shell4 div{
+  position:absolute;
+  width:16px;
+  height:16px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron19{ transform: translate(-50%, -50%) rotate(0deg)   translateX(170px); }
+.electron20{ transform: translate(-50%, -50%) rotate(180deg)   translateX(170px); }
+
+/* Animacionet */
+@keyframes spin1{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes spin2{from{transform:translate(-50%,-50%) rotate(360deg)}to{transform:translate(-50%,-50%) rotate(0deg)}}
+@keyframes spin3{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes spinOuter1{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}
+@keyframes spinOuter2{from{transform:rotate(360deg)}to{transform:rotate(0deg)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Kalciumi (Ca)</h1>
+  <p>Elementi i 20-t i sistemit periodik</p>
+  <center><button style="background-color:gray;font-size:18px;font-family:britannic;"><a href="index.html">Faqja kryesore</a></button>
+<button style="background-color:#ffcc80;font-size:18px;font-family:britannic;"><a href="metaletalkaline.html">Metalet alkaline</a></button>
+<button style="background-color:#fff59d;font-size:18px;font-family:britannic;"><a href="alkalinotokesore.html">Metalet alkalino-tokësore</a></button>
+<button style="background-color:#a5d6a7;font-size:18px;font-family:britannic;"><a href="metaletkalimtare.html">Metalet kalimtare</a></button>
+<button style="background-color:#b0bec5;font-size:18px;font-family:britannic;"><a href="metaletedobeta.html">Metalet e dobëta</a></button>
+<button style="background-color:#90caf9;font-size:18px;font-family:britannic;"><a href="jometalet.html">Jometalet</a></button>
+<button style="background-color:#ce93d8;font-size:18px;font-family:britannic;"><a href="gazeteplogeta.html">Gazet e plogëta</a></button>
+<button style="background-color:#80deea;font-size:18px;font-family:britannic;"><a href="lantanoidet.html">Lantanoidet</a></button>
+<button style="background-color:#bcaaa4;font-size:18px;font-family:britannic;"><a href="aktinidet.html">Aktinoidet</a></button>
+<button style="background-color:#ef9a9a;font-size:18px;font-family:britannic;"><a href="Halogjenet.html">Halogjenet</a></button></CENTER>
+</header>
+<div class="container">
+  <div class="info">
+    <h2>Të dhënat kryesore</h2>
+    <p><b>Emri:</b> Kalcium</p>
+    <p><b>Simboli:</b> Ca</p>
+    <p><b>Numri atomik:</b> 20</p>
+    <p><b>Masa atomike:</b> 40.078 u</p>
+    <p><b>Elektronegativiteti:</b> 1.00</p>
+    <p><b>Numrat e oksidimit:</b> +2</p>
+	<p><b>Grupi:</b>IA</p>
+	 <p><b>Perioda:</b>4</p>
+    <p><b>Përshkrim:</b> Kalciumi është një metal alkalin tokësor, reaktiv, i rëndësishëm për eshtrat dhe përdoret në aliazhe dhe industri të ndryshme. Ka 2 elektrone jashtë që e bëjnë reaktiv.</p>
+  </div>
+  <div class="atom">
+    <div class="nucleus"></div>
+    <div class="shell1">
+      <div class="electron1"></div>
+      <div class="electron2"></div>
+    </div>
+    <div class="shell2">
+      <div class="electron3"></div>
+      <div class="electron4"></div>
+      <div class="electron5"></div>
+      <div class="electron6"></div>
+      <div class="electron7"></div>
+      <div class="electron8"></div>
+      <div class="electron9"></div>
+      <div class="electron10"></div>
+    </div>
+    <div class="shell3">
+      <div class="electron11"></div>
+      <div class="electron12"></div>
+      <div class="electron13"></div>
+      <div class="electron14"></div>
+      <div class="electron15"></div>
+      <div class="electron16"></div>
+      <div class="electron17"></div>
+      <div class="electron18"></div>
+    </div>
+    <div class="shell4">
+      <div class="electron19"></div>
+      <div class="electron20"></div>
+    </div>
+  </div>
+</div>
+<p align="right">&copy E.K.E</p>
+</body>
+</html>

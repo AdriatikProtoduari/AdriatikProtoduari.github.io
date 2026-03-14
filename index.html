@@ -4,13 +4,77 @@
 <meta charset="UTF-8">
 <title>Tabela e Sistemit Periodik</title>
 <style>
+
 a{color:black;}
 body{font-family:Arial;background:#f2f2f2}
 table{border-collapse:collapse;margin:auto}
-td{border:1px solid #000;width:60px;height:65px;text-align:center;font-size:11px}
 small{font-size:9px}
 .bosh{border:none;background:none}
+table{
+  border-collapse:collapse;
+  margin:auto;
+  background:#f2f2f2;
+}
 
+td{
+  border:1px solid #000;
+  width:60px;
+  height:65px;
+  text-align:center;
+  font-size:11px;
+}
+
+/* bosh */
+.bosh{
+  border:none;
+  background:#f2f2f2;
+}
+
+/* perioda */
+.perioda{
+  border:none;
+  background:none;
+  font-weight:bold;
+}
+
+/* grupe */
+.grupi{
+  border:none;
+  background:none;
+  font-weight:bold;
+  vertical-align:bottom;
+  padding-bottom:5px;
+}
+.grupet td{
+ pointer-events:none;
+  background:none;
+  border:none;
+  text-align:center;
+  vertical-align:top;
+}
+
+.g{ position:relative; }
+.g1  { top: 40px; }
+.g2  { top: 110px; }
+.g3  { top: 250px; }
+.g4  { top: 250px; }
+.g5  { top: 250px; }
+.g6  { top: 250px; }
+.g7  { top: 250px; }
+
+
+.g9  { top: 250px; }
+
+
+.g11 { top: 250px; }
+.g12 { top: 250px; }
+
+.g13 { top: 110px; }
+.g14 { top: 110px; }
+.g15 { top: 110px; }
+.g16 { top: 110px; }
+.g17 { top: 110px; }
+.g18 { top: 40px; }
 .alkalin{background:#ffcc80}
 .alkalino{background:#fff59d}
 .tranzicion{background:#a5d6a7}
@@ -24,20 +88,46 @@ small{font-size:9px}
 </head>
 
 <body>
-<h2 align="center">Tabela e Sistemit Periodik të Elementeve</h2>
-
+<h2 align="center" style="font-family:castellar;">Tabela e Sistemit Periodik të Elementeve</h2>
 <table>
 <tr>
-<td class="jometal">1 <br><b><a href="sp.html">H</a></b><br><small>Hidrogjen</small></td>
+  <td class="bosh"></td>
+  </tr>
+  <tr class="grupet">
+  <td></td>
+ <td class="g g1"><b>IA</b></td>
+  <td class="g g2"><b>IIA</b></td>
+  <td class="g g3"><b>IIIB</b></td>
+  <td class="g g4"><b>IVB</b></td>
+  <td class="g g5"><b>VB</b></td>
+  <td class="g g6"><b>VIB</b></td>
+  <td class="g g7"><b>VIIB</b></td>
+  
+  <td class="g g9" colspan="3"><b>VIIIB</b></td>
+  
+  <td class="g g11"><b>IB</b></td>
+  <td class="g g12"><b>IIB</b></td>
+  <td class="g g13"><b>IIIA</b></td>
+  <td class="g g14"><b>IVA</b></td>
+  <td class="g g15"><b>VA</b></td>
+  <td class="g g16"><b>VIA</b></td>
+  <td class="g g17"><b>VIIA</b></td>
+  <td class="g g18"><b>VIIIA</b></td>
+</tr>
+</tr>
+<tr>
+ <td class="perioda">1</td>
+<td class="jometal">1<br><b><a href="sp.html">H</a></b><br><small>Hidrogjen</small></td>
 <td class="bosh" colspan="16"></td>
 <td class="gaz">2<br><b><a href="helium.html">He</a></b><br><small>Helium</small></td>
 </tr>
 
 <tr>
+ <td class="perioda">2</td>
 <td class="alkalin">3<br><b><a href="litium.html">Li</a></b><br><small>Litium</small></td>
-<td class="alkalino">4<br><b><a href="berilium.html">Be</a></b><br><small>Beriliumi</small></td>
-<td class="bosh" colspan="11"></td>
-<td class="postmetal">5<br><b><a href="bori.html">B</a></b><br><small>Bor</small></td>
+<td class="alkalino">4<br><b><a href="berilium.html">Be</a></b><br><small>Berilium</small></td>
+<td class="bosh" colspan="10"></td>
+<td class="jometal">5<br><b><a href="bori.html">B</a></b><br><small>Bor</small></td>
 <td class="jometal">6<br><b><a href="karbon.html">C</a></b><br><small>Karbon</small></td>
 <td class="jometal">7<br><b><a href="azot.html">N</a></b><br><small>Azot</small></td>
 <td class="jometal">8<br><b><a href="oksigjen.html">O</a></b><br><small>Oksigjen</small></td>
@@ -46,11 +136,12 @@ small{font-size:9px}
 </tr>
 
 <tr>
+ <td class="perioda">3</td>
 <td class="alkalin">11<br><b><a href="natrium.html">Na</a></b><br><small>Natrium</small></td>
 <td class="alkalino">12<br><b><a href="magnez.html">Mg</a></b><br><small>Magnez</small></td>
 <td class="bosh" colspan="10"></td>
 <td class="postmetal">13<br><b><a href="alumin.html">Al</a></b><br><small>Alumin</small></td>
-<td class="postmetal">14<br><b><a href="silic.html">Si</a></b><br><small>Silic</small></td>
+<td class="jometal">14<br><b><a href="silic.html">Si</a></b><br><small>Silic</small></td>
 <td class="jometal">15<br><b><a href="fosfor.html">P</a></b><br><small>Fosfor</small></td>
 <td class="jometal">16<br><b><a href="squfur.html">S</a></b><br><small>Squfur</small></td>
 <td class="halogjen">17<br><b><a href="klor.html">Cl</a></b><br><small>Klor</small></td>
@@ -58,6 +149,7 @@ small{font-size:9px}
 </tr>
 
 <tr>
+ <td class="perioda">4</td>
 <td class="alkalin">19<br><b><a href="kalium.html">K</a></b><br><small>Kalium</small></td>
 <td class="alkalino">20<br><b><a href="kalcium.html">Ca</a></b><br><small>Kalcium</small></td>
 <td class="tranzicion">21<br><b><a href="skandium.html">Sc</a></b><br><small>Skandium</small></td>
@@ -72,13 +164,14 @@ small{font-size:9px}
 <td class="tranzicion">30<br><b><a href="zink.html">Zn</a></b><br><small>Zink</small></td>
 <td class="postmetal">31<br><b><a href="galium.html">Ga</a></b><br><small>Galium</small></td>
 <td class="postmetal">32<br><b><a href="germanium.html">Ge</a></b><br><small>Germanium</small></td>
-<td class="postmetal">33<br><b><a href="arsen.html">As</a></b><br><small>Arsenik</small></td>
+<td class="jometal">33<br><b><a href="arsen.html">As</a></b><br><small>Arsenik</small></td>
 <td class="jometal">34<br><b><a href="selen.html">Se</a></b><br><small>Selen</small></td>
 <td class="halogjen">35<br><b><a href="brom.html">Br</a></b><br><small>Brom</small></td>
 <td class="gaz">36<br><b><a href="kripton.html">Kr</a></b><br><small>Kripton</small></td>
 </tr>
 
 <tr>
+ <td class="perioda">5</td>
 <td class="alkalin">37<br><b><a href="rubidium.html">Rb</a></b><br><small>Rubidium</small></td>
 <td class="alkalino">38<br><b><a href="stroncium.html">Sr</a></b><br><small>Stroncium</small></td>
 <td class="tranzicion">39<br><b><a href="itrium.html">Y</a></b><br><small>Itrium</small></td>
@@ -94,12 +187,13 @@ small{font-size:9px}
 <td class="postmetal">49<br><b><a href="indium.html">In</a></b><br><small>Indium</small></td>
 <td class="postmetal">50<br><b><a href="kallaj.html">Sn</a></b><br><small>Kallaj</small></td>
 <td class="postmetal">51<br><b><a href="antimon.html">Sb</a></b><br><small>Antimon</small></td>
-<td class="postmetal">52<br><b><a href="telur.html">Te</a></b><br><small>Telurium</small></td>
+<td class="jometal">52<br><b><a href="telur.html">Te</a></b><br><small>Telurium</small></td>
 <td class="halogjen">53<br><b><a href="jod.html">I</a></b><br><small>Jod</small></td>
 <td class="gaz">54<br><b><a href="ksenon.html">Xe</a></b><br><small>Ksenon</small></td>
 </tr>
 
 <tr>
+ <td class="perioda">6</td>
 <td class="alkalin">55<br><b><a href="cezium.html">Cs</a></b><br><small>Cezium</small></td>
 <td class="alkalino">56<br><b><a href="barium.html">Ba</a></b><br><small>Barium</small></td>
 <td class="lantanid">57<br><b><a href="lantan.html">La</a></b><br><small>Lantan</small></td>
@@ -121,6 +215,7 @@ small{font-size:9px}
 </tr>
 
 <tr>
+ <td class="perioda">7</td>
 <td class="alkalin">87<br><b><a href="francium.html">Fr</a></b><br><small>Francium</small></td>
 <td class="alkalino">88<br><b><a href="radium.html">Ra</a></b><br><small>Radium</small></td>
 <td class="aktinid">89<br><b><a href="aktin.html">Ac</a></b><br><small>Aktin</small></td>
@@ -179,19 +274,21 @@ small{font-size:9px}
 <td class="aktinid">103  <b><a href="lorencium.html">Lr</a></b><br><small>Lorencium</small></td>
 </tr>
 </table><br>
-<center><button style="background-color: gray; font-family: arial black; "><a href="xi.html">FAQJA KYESORE</a></button>
-  <button style="background-color: gray; font-family: arial black;  font-size: 20px; width: 10%;"><a href="helium.html">GAZET</a></button>
-  <button style="background-color: gray; font-family: arial black;  "><a href="hekur.html">METALET</a></button>
-  <button style="background-color: gray; font-family: arial black;  "><a href="klor.html">JO METALET</a></button>
-  <button style="background-color: gray; font-family: arial black;  "><a href="baker.html">ELEMETNET KALIMTARE</a></button>
-  <button style="background-color: gray; font-family: arial black;  "><a href="baker.html">ELEMETNET KALIMTARE</a></button>
-  <button style="background-color: gray; font-family: arial black;  "><a href="baker.html">ELEMETNET KALIMTARE</a></button>
-  <button style="background-color: gray; font-family: arial black;  "><a href="baker.html">ELEMETNET KALIMTARE</a></button></center>
+<br>
+<center><button style="background-color:#ffcc80;font-size:18px;font-family:britannic;"><a href="metaletalkaline.html">Metalet alkaline</a></button>
+<button style="background-color:#fff59d;font-size:18px;font-family:britannic;"><a href="alkalinotokesore.html">Metalet alkalino-tokësore</a></button>
+<button style="background-color:#a5d6a7;font-size:18px;font-family:britannic;"><a href="metaletkalimtare.html">Metalet kalimtare</a></button>
+<button style="background-color:#b0bec5;font-size:18px;font-family:britannic;"><a href="metaletedobeta.html">Metalet e dobëta</a></button>
+<button style="background-color:#90caf9;font-size:18px;font-family:britannic;"><a href="jometalet.html">Jometalet</a></button>
+<button style="background-color:#ce93d8;font-size:18px;font-family:britannic;"><a href="gazeteplogeta.html">Gazet e plogëta</a></button>
+<button style="background-color:#80deea;font-size:18px;font-family:britannic;"><a href="lantanoidet.html">Lantanoidet</a></button>
+<button style="background-color:#bcaaa4;font-size:18px;font-family:britannic;"><a href="aktinidet.html">Aktinoidet</a></button>
+<button style="background-color:#ef9a9a;font-size:18px;font-family:britannic;"><a href="Halogjenet.html">Halogjenet</a></button></CENTER>
+<p align="right">&copy E.K.E</p>
 </body>
 </html>
 
-</body>
-</html>
+
 
 
 

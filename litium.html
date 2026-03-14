@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="sq">
+<head>
+<meta charset="UTF-8">
+<title>Litiumi (Li)</title>
+<style>
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+  background:linear-gradient(120deg,#2b2d42,#8d99ae,#edf2f4);
+  color:white;
+}
+header{text-align:center;padding:40px}
+header h1{font-size:48px;margin-bottom:10px}
+header p{font-size:18px;opacity:0.9}
+.container{display:flex;justify-content:space-around;align-items:center;padding:40px;flex-wrap:wrap}
+.info{width:420px;background:rgba(255,255,255,0.2);padding:25px;border-radius:18px;color:white}
+.info h2{text-align:center;margin-top:0}
+.info p{font-size:16px;line-height:1.6}
+.atom{width:280px;height:280px;position:relative}
+
+/* Bërthama */
+.nucleus{width:32px;height:32px;background:#ff6b6b;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+
+/* Shtresa e parë (2 elektrone) */
+.shell1{width:160px;height:160px;border:2px dashed #4ecdc4;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin1 6s linear infinite}
+.shell1 div{
+  position:absolute;
+  width:10px;
+  height:10px;
+  background:#ffd700;
+  border-radius:50%;
+  top:50%;
+  left:50%;
+ }
+  .electron1{ transform: translate(-50%, -50%) rotate(0deg)   translateX(80px); }
+.electron2{ transform: translate(-50%, -50%) rotate(180deg)  translateX(80px); }
+
+/* Shtresa e dytë (1 elektron) */
+.shell2{width:220px;height:220px;border:2px dashed #ff6b6b;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);animation:spin2 10s linear infinite}
+.electron3{width:14px;height:14px;background:#ffbe0b;border-radius:50%;position:absolute;top:-7px;left:50%}
+
+/* Animacionet */
+@keyframes spin1{from{transform:translate(-50%,-50%) rotate(0deg)}to{transform:translate(-50%,-50%) rotate(360deg)}}
+@keyframes spin2{from{transform:translate(-50%,-50%) rotate(360deg)}to{transform:translate(-50%,-50%) rotate(0deg)}}
+</style>
+</head>
+<body>
+<header>
+  <h1>Litiumi (Li)</h1>
+  <p>Elementi i 3-të i sistemit periodik</p>
+ <center><button style="background-color:gray;font-size:18px;font-family:britannic;"><a href="index.html">Faqja kryesore</a></button>
+<button style="background-color:#ffcc80;font-size:18px;font-family:britannic;"><a href="metaletalkaline.html">Metalet alkaline</a></button>
+<button style="background-color:#fff59d;font-size:18px;font-family:britannic;"><a href="alkalinotokesore.html">Metalet alkalino-tokësore</a></button>
+<button style="background-color:#a5d6a7;font-size:18px;font-family:britannic;"><a href="metaletkalimtare.html">Metalet kalimtare</a></button>
+<button style="background-color:#b0bec5;font-size:18px;font-family:britannic;"><a href="metaletedobeta.html">Metalet e dobëta</a></button>
+<button style="background-color:#90caf9;font-size:18px;font-family:britannic;"><a href="jometalet.html">Jometalet</a></button>
+<button style="background-color:#ce93d8;font-size:18px;font-family:britannic;"><a href="gazeteplogeta.html">Gazet e plogëta</a></button>
+<button style="background-color:#80deea;font-size:18px;font-family:britannic;"><a href="lantanoidet.html">Lantanoidet</a></button>
+<button style="background-color:#bcaaa4;font-size:18px;font-family:britannic;"><a href="aktinidet.html">Aktinoidet</a></button>
+<button style="background-color:#ef9a9a;font-size:18px;font-family:britannic;"><a href="Halogjenet.html">Halogjenet</a></button></CENTER>
+</header>
+<div class="container">
+  <div class="info">
+    <h2>Të dhënat kryesore</h2>
+    <p><b>Emri:</b> Litium</p>
+    <p><b>Simboli:</b> Li</p>
+    <p><b>Numri atomik:</b> 3</p>
+    <p><b>Masa atomike:</b> 6.94 u</p>
+    <p><b>Elektronegativiteti:</b> 0.98</p>
+    <p><b>Numrat e oksidimit:</b> +1</p>
+    <p><b>Grupi:</b>IA</p>
+	 <p><b>Perioda:</b>2</p>
+    <p><b>Përshkrim:</b> Litiumi është një metal i butë, shumë reaktiv dhe i lehtë. Përdoret në bateri, industri kimike dhe në disa ilaçe.</p>
+  </div>
+  <div class="atom">
+    <div class="nucleus"></div>
+    <div class="shell1">
+      <div class="electron1"></div>
+      <div class="electron2"></div>
+    </div>
+    <div class="shell2">
+      <div class="electron3"></div>
+    </div>
+  </div>
+</div><p align="right">&copy E.K.E</p>
+</body>
+</html>
